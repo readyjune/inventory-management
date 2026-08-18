@@ -225,7 +225,7 @@ export default {
 
 .budget-slider {
   flex: 1;
-  accent-color: #2563eb;
+  accent-color: var(--accent);
 }
 
 .budget-value {
@@ -233,7 +233,7 @@ export default {
   text-align: right;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--ink);
 }
 
 .category-select-row {
@@ -245,22 +245,22 @@ export default {
 .category-select-row label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #64748b;
+  color: var(--muted);
 }
 
 .category-select-row select {
   padding: 0.5rem 0.75rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   border-radius: 6px;
   font-size: 0.875rem;
-  color: #0f172a;
-  background: white;
+  color: var(--ink);
+  background: var(--surface);
 }
 
 .place-order-btn {
   padding: 0.5rem 1.25rem;
-  background: #2563eb;
-  color: white;
+  background: var(--accent);
+  color: var(--accent-ink);
   border: none;
   border-radius: 6px;
   font-weight: 600;
@@ -270,25 +270,25 @@ export default {
 }
 
 .place-order-btn:hover:not(:disabled) {
-  background: #1d4ed8;
+  background: var(--accent-active);
 }
 
 .place-order-btn:disabled {
-  background: #cbd5e1;
+  background: var(--border-strong);
   cursor: not-allowed;
 }
 
 .empty-state {
   text-align: center;
   padding: 2rem;
-  color: #64748b;
+  color: var(--muted);
   font-size: 0.938rem;
 }
 
 .success-banner {
-  background: #d1fae5;
-  border: 1px solid #6ee7b7;
-  color: #065f46;
+  background: var(--good-soft);
+  border: 1px solid var(--good);
+  color: var(--good);
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1.25rem;
@@ -300,7 +300,7 @@ export default {
 }
 
 .success-banner a {
-  color: #065f46;
+  color: var(--good);
   font-weight: 600;
   text-decoration: underline;
 }
