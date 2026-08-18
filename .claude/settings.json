@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv venv *)",
+      "Bash(uv sync *)",
+      "Bash(npm install *)",
+      "Bash(lsof -ti:3000,8001)",
+      "Bash(xargs kill -9)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"frontend: %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"backend docs: %{http_code}\\\\n\" http://localhost:8001/docs)",
+      "Bash(open -na \"Google Chrome\" --args --new-window \"http://localhost:3000\")",
+      "Bash(open -na \"Google Chrome\" --args --new-window \"http://localhost:8001/docs\")",
+      "Bash(xargs kill)",
+      "Bash(claude --version)",
+      "Bash(npm view *)",
+      "Bash(gh auth *)",
+      "Bash(gh api *)"
+    ]
+  }
+}

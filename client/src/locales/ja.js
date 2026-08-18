@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +107,8 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '提出済み補充注文',
+    noSubmittedOrders: 'まだ補充注文が提出されていません。',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,7 +128,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
     }
   },
 
@@ -188,6 +192,37 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: '補充',
+    description: '予算に基づいた補充推奨品を生成し、発注します',
+    budgetLabel: '予算',
+    categoryLabel: 'カテゴリ',
+    recommendedItems: '推奨品目',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      trend: 'トレンド',
+      currentDemand: '現在の需要',
+      forecastedDemand: '予測需要',
+      unitCost: '単価',
+      recommendedQuantity: '推奨数量',
+      recommendedCost: '推奨コスト'
+    },
+    summary: {
+      totalCost: '推奨合計コスト',
+      budget: '予算',
+      remaining: '残り予算'
+    },
+    placeOrder: '発注する',
+    placingOrder: '発注中...',
+    noRecommendations: 'この予算とカテゴリでは推奨品目がありません。予算を増やしてみてください。',
+    orderSuccess: '注文{orderNumber}が正常に送信されました。',
+    leadTime: 'リードタイム: {days}日',
+    expectedDelivery: '予定納期: {date}',
+    viewOrders: '注文タブで確認'
+  },
+
   // Filters
   filters: {
     timePeriod: '期間',
@@ -204,6 +239,7 @@ export default {
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
+    submitted: '提出済み',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
     adequate: '適量'
@@ -323,7 +359,8 @@ export default {
     search: '検索',
     filter: 'フィルター',
     export: 'エクスポート',
-    items: '件'
+    items: '件',
+    days: '日'
   },
 
   // Product Names
